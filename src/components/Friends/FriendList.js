@@ -1,11 +1,8 @@
-import friends from './friends.json';
 import FriendListItem from './FriendListItem';
-
-console.log(friends);
 
 export default function FriendList({ friends }) {
     return (
-        <ul class="wdwd">
+        <ul className="wdwd">
             {friends.map(friend => (
                 <FriendListItem
                     key={friend.id}
